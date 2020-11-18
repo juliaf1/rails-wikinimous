@@ -27,6 +27,7 @@ gem 'bootsnap', '>= 1.4.2', require: false
 
 gem 'simple_form'
 gem 'faker'
+gem 'font-awesome-sass', '~> 5.15.1'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

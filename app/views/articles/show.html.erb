@@ -1,0 +1,13 @@
+<div class="container">
+
+  <div class="row justify-content-center">
+    <div class="col-10 col-lg-8 mb-3">
+      <h1 class="border-primary border-bottom pb-3 mb-3">
+        <%= @article.title.upcase %>
+        <%= link_to icon('fas', 'pencil-alt'), edit_article_path(@article), class: 'icon' %>
+        <%= link_to icon('fas', 'trash-alt'), article_path(@article), method: :delete, data: { confirm: "Are you sure?" }, class: 'icon' %>
+      </h1>
+      <p><%= @article.content %></p>
+    </div>
+  </div>
+</div>
